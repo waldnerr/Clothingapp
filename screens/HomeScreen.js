@@ -1,31 +1,32 @@
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native';
 import React from 'react';
 import tw from 'tailwind-react-native-classnames';
+import ClothesOptions from '../components/ClothesOptions';
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style ={tw`bg-red-3 h-full`}>
+    <SafeAreaView style ={tw `bg-white h-full`}>
         <View style={tw`p-5`}>
-            <image 
+             <Image 
                 style={{
                     width:100,
                     height:100,
-                    resizeMode: "contain"
+                    resizeMode: "contain",
 
                 }}
                 source={{
+                    uri: "https://raw.githubusercontent.com/waldnerr/Clothingapp/main/imgs/wlogo.png",
+                }}/>    
+              
+               <ClothesOptions/>
 
-                    uri: "/imgs/wlogo.png "
-                }}
-            
-            />
         </View>
-      <Text style={[tw `text-blue-500 p-10`]}>This is the Home Screen</Text>
+     
     </SafeAreaView>
   )
 }
 
-export default HomeScreen
+export default HomeScreen;
 
 const styles = StyleSheet.create({
     text:{
