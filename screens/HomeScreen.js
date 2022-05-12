@@ -15,7 +15,7 @@ const HomeScreen = () => {
 
                 }}
                 source={{
-                    uri: "https://raw.githubusercontent.com/waldnerr/Clothingapp/main/imgs/wlogo.png",
+                    uri: "https://raw.githubusercontent.com/waldnerr/Clothingapp/main/assets/wlogo.png",
                 }}/>    
               
                <ClothesOptions/>
