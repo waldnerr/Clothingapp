@@ -46,17 +46,17 @@ const ClothesOptions = () => {
      renderItem={({item}) => (
         <TouchableOpacity 
         onPress={()=> navigation.navigate(item.screen)}
-        style ={tw `p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}>
+        style ={tw `p-2 pl-6 pb-10 pt-5 bg-gray-200 m-2 ml-14 mr-14 mb-9 w-50`}>
             <View>
                 <Image
 
-                style={{width:120, height:120, resizeMode:"contain" }}
+                style={{width:100, height:100 ,resizeMode:"contain" }}
                 source={{uri: item.image}}
                 />
                 <Text style = {tw `mt-2 text-lg font-semibold`}>{item.title}</Text>
                 <Icon 
-                style={tw` p-2 bg-black rounded-full w-10 mt-4`}
-                name="arrowright" color="white" type='antdesign'
+                style={tw` m-2 ml-20 mr-0 p-2 bg-black rounded-full w-40 mt-4`}
+                name= "arrowright" color="white" type='antdesign'
                 />
 
 

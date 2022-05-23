@@ -7,11 +7,10 @@ const ShoeScreen = () => {
   return (
     <View>
       <Text>SHOE SCREEN</Text>
-    <View style ={tw`h-1/2`}>
+    <View style ={tw`h-full`}>
       <Shoes/>
 
     </View>
-    <View style ={tw`h-1/2`}></View>
     </View>
 
   )
