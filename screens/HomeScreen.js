@@ -9,6 +9,7 @@ const HomeScreen = () => {
         <View style={tw`p-5`}>
              <Image 
                 style={{
+                    
                     width:100,
                     height:100,
                     resizeMode: "contain",
@@ -23,8 +24,8 @@ const HomeScreen = () => {
         </View>
      
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default HomeScreen;
 
